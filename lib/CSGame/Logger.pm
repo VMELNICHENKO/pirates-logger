@@ -1,6 +1,6 @@
 package CSGame::Logger;
 use parent 'Export::XS';
-use 5.020;
+use 5.022;
 use strict;
 use warnings;
 use XS::Framework;
