@@ -13,8 +13,10 @@ using namespace std;
 using panda::string;
 using namespace panda::event;
 using panda::iptr;
+
 class PiratesLog : public XSBackref {
-public:
+
+ public:
   iptr<FSRequest> fsRequest;
   uint64_t _pos = 0;
   file_t log_file;

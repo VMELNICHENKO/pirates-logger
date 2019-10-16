@@ -6,10 +6,10 @@ use Test::Fatal;
 use lib 'blib';
 use lib 'blib/arch';
 use lib 'lib';
-use Pirates::Log;
+use CSGame::Logger;
 use Time::HiRes qw |time|;
 
-ok my $obj = Pirates::Log->new(), 'create';
+ok my $obj = CSGame::Logger->new(), 'create';
 
 my $is_opened = 0;
 #$obj->open('test_file.log', undef);
@@ -54,7 +54,7 @@ while ( $i++ < 100000 ) {
 diag "Time: " . ( ( time() - $start_time) * 1000 ) . " ms";
 
 close $FH;
-# ok my $obj = Pirates::Log->new($FH), 'create';
+# ok my $obj = CSGame::Logger->new($FH), 'create';
 
 =cut
 

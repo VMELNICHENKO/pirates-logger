@@ -1,4 +1,11 @@
-MODULE = Pirates::Log        PACKAGE = Pirates::Log
+#include <xs/xs.h>
+//#include <xs/export.h>
+#include "src/pirates-log/log.h"
+#define MAX_ERR_SIZE    256
+
+MODULE = Pirates::Log  PACKAGE = Pirates::Log
+
+    MODULE = Pirates::Log        PACKAGE = Pirates::Log
 PROTOTYPES: DISABLE
 
 PiratesLog * PiratesLog::new( Loop* loop = Loop::default_loop() ){
