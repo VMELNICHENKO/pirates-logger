@@ -1,0 +1,8 @@
+TYPEMAP
+PiratesLog* T_PIRATES_LOG
+
+INPUT
+T_PIRATES_LOG   : T_OPTR(basetype=PiratesLog*, refcnt, backref)
+
+OUTPUT
+T_PIRATES_LOG   : T_OPTR(basetype=PiratesLog*, refcnt, backref)
